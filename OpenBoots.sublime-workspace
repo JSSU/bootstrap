@@ -56,9 +56,35 @@
 	"buffers":
 	[
 		{
+			"file": "templete1.html",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 5052,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "activeBox.html",
+			"settings":
+			{
+				"buffer_size": 4957,
+				"line_ending": "Windows",
+				"name": "<!-- Button trigger modal -->"
+			}
+		},
+		{
+			"file": "dragBox.html",
+			"settings":
+			{
+				"buffer_size": 5085,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "nonedragable.html",
+			"settings":
+			{
+				"buffer_size": 5087,
 				"line_ending": "Windows"
 			}
 		}
@@ -70,16 +96,20 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 81.0,
-		"last_filter": "install",
+		"height": 196.0,
+		"last_filter": "sshtml",
 		"selected_items":
 		[
+			[
+				"sshtml",
+				"Set Syntax: HTML"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
 			]
 		],
-		"width": 400.0
+		"width": 512.0
 	},
 	"console":
 	{
@@ -100,10 +130,13 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Junsu.Shen/Desktop/bootstrap"
+		"/C/Users/Junsu.Shen/Desktop/bootstrap",
+		"/C/Users/Junsu.Shen/Desktop/bootstrap/css"
 	],
 	"file_history":
 	[
+		"/C/Users/Junsu.Shen/Desktop/bootstrap/js/jquery-ui.js",
+		"/C/Users/Junsu.Shen/Desktop/bootstrap/box.html",
 		"/C/Users/Junsu.Shen/Desktop/f.html",
 		"/C/Users/Junsu.Shen/Desktop/DPWIntranetInstall.bat.lnk",
 		"/C/Users/Junsu.Shen/Desktop/notes auto install",
@@ -230,7 +263,7 @@
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -244,6 +277,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"draggable",
+			"$(\"#myModal\").draggable();",
+			"draggable",
 			"search",
 			"2",
 			"\">\n",
@@ -349,15 +385,49 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "templete1.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 5052,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								375,
+								375
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "activeBox.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4957,
 						"regions":
 						{
 						},
@@ -365,16 +435,81 @@
 						[
 							[
 								0,
-								0
+								4957
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<!-- Button trigger modal -->",
+							"incomplete_sync": null,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "dragBox.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5085,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								5085
 							]
 						],
 						"settings":
 						{
 							"incomplete_sync": null,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 792.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "nonedragable.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5087,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								251,
+								251
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 968.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
