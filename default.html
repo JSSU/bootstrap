@@ -1,34 +1,19 @@
 <html lang="en"><head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>T</title>
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="js/ie-emulation-modes-warning.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <link rel="icon" href="icons/ftop.ico">
-    <!-- Bootstrap core CSS JS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/starter-template.css" rel="stylesheet">
     <script src="js/bootstrap.min.js"></script>
-  </head>
+    <script src="js/jquery-ui.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
 
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $(".nav a").on("click", function(){
-          $(".nav").find(".active").removeClass("active");
-          $(this).parent().addClass("active");
-       })
-    });
-          
-  </script>
-  <body>
+    <link rel="icon" href="icons/form.ico">
+    <style>
+        #draggable { width: 150px; height: 150px; padding: 0.5em; border: 1px solid #ccc; display: table; }  
+        #centerdiv { text-align:center; vertical-align: middle; display: table-cell;}  
+    </style>
+</head>
+ <body>
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -43,45 +28,53 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul id="nav_id" class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#Main">Main</a></li>    <!-- class="active" -->
+            <li><a href="#Director">Director</a></li>
+            <li><a href="#Summary-Sheet">Summary-Sheet</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-    <!--Custom model demo Launch  -->
-    <!-- Button trigger modal -->
-  <div class="container">
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-      Launch demo modal
-    </button>
 
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
+    <div class="container">
+      <div class="row mainStarter">
+        <h1>DPW Profile</h1>
+        <!-- BodyParts -->
+        <div id="Main" class="col-md-4 starter">
+          <h1 class="containersize">Main</h1>
         </div>
+        <!-- Director -->
+        <div id="Director" class="col-md-4 starter">
+          <h1 class="containersize">Director</h1>
+        </div>
+        <!-- Summary-Sheet -->
+        <div id="Summary-Sheet" class="col-md-4 starter">
+          <h1 class="containersize">Summary-Sheet</h1>
+        </div> 
+        <!-- DataSource -->
       </div>
-    </div>
-  </div>
+    </div><!-- /.container -->
 
+     <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
+     <asp:SqlDataSource ID="SqlDataSource2" runat="server"></asp:SqlDataSource>
+     <asp:SqlDataSource ID="SqlDataSource3" runat="server"></asp:SqlDataSource>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-
-
-<script type="text/javascript">(function () {return window.SIG_EXT = {};})()</script>
+  <script type="text/javascript">
+      $(".nav a").on("click", function () {
+          //Acitive nav. Default no highlight, 
+          $(".nav").find(".active").removeClass("active");
+          $(this).parent().addClass("active");
+          //alert($(this).html());
+          $(".container .mainStarter .starter").addClass("hideContainer").removeClass("col-md-4");
+          $(".container .mainStarter #" + $(this).html()).removeClass("hideContainer").addClass("col-md-6 col-md-offset-3");
+      });
+      $(".navbar-brand").on("click",function(){
+          $(".nav").find(".active").removeClass("active");
+          $(".container .mainStarter .starter").removeClass("hideContainer col-md-6 col-md-offset-3").addClass("col-md-4");
+      });
+  </script>
+<script type="text/javascript">    (function () { return window.SIG_EXT = {}; })()</script>
       </body>
 </html>
