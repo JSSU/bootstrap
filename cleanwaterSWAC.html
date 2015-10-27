@@ -1,0 +1,447 @@
+
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+<style>
+/*
+body { background: #E96D65; }*/
+
+#carousel {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#slides {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 650px;
+
+  outline: 1px solid orange;
+}
+
+#slides ul {
+  list-style: none;
+  width: 100%;
+  height: 250px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#slides li {
+  width: 100%;
+  height: 650px;
+  float: left;
+  text-align: center;
+  position: relative;
+  font-family: lato, sans-serif;
+}
+
+/* Styling for prev and next buttons */
+
+.btn-bar {
+
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+
+#buttons {
+  padding: 0 0 0px;
+  float: left;
+}
+
+#buttons a {
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  float: left;
+  outline: 0;
+  margin: 0 20px;
+  color: #b14943;
+  text-decoration: none;
+  display: block;
+  padding: 9px;
+/*  width: 35px;*/
+}
+
+a#prev:hover,
+a#next:hover {
+  color: #FFF;
+  text-shadow: .5px 0px #b14943;
+}
+
+.quote-phrase,
+.quote-author {
+  text-align: left;
+  font-family: sans-serif;
+  font-weight: 300;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 5px 20px;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+.quote-phrase {
+  height: 200px;
+  font-size: 24px;
+  color: #000000;
+
+  text-shadow: .5px 0px #b14943;
+}
+
+.quote-marks {
+  font-size: 30px;
+  padding: 0 3px 3px;
+  position: inherit;
+}
+
+.quote-author {
+  font-style: normal;
+  font-size: 20px;
+  color: #b14943;
+  font-weight: 400;
+  height: 30px;
+}
+
+.quoteContainer,
+.authorContainer {
+  display: table;
+  width: 100%;
+}
+</style>
+
+<div style="text-align: center;"></div>
+<table style="text-align: center; width: 920px;">
+    <tbody>
+    </tbody>
+</table>
+<table style="text-align: center; width: 920px;">
+    <tbody>
+        <tr>
+            <td style="text-align: left; vertical-align: top;">&nbsp;</td>
+            <td style="text-align: left; vertical-align: top;">
+            <div style="text-align: left;">
+            <!-- start -->
+            <span style="line-height: normal; font-size: 18px;">
+            <p style="font-family: verdana; text-align: left; margin-bottom: 6pt;"><span style="font-size: medium; color: #333333; background-color: initial;"><strong style="text-align: center; color: #1f497d; font-size: 11pt; background-color: initial;"><span style="font-size: 32px;"><strong style="color: #333333;"><span style="font-family: verdana; font-size: 32px;">Stormwater Advisory Committee</span></strong></span></strong><br />
+            <br />
+            </span></p>
+           <!-- here -->
+<!-- slider start -->
+<div id="carousel">
+  <div class="btn-bar">
+    <div id="buttons"><a id="showAll" href="#">Show All</a><a id="prev" href="#">Previous</a><a id="next" href="#">Next</a> </div>
+  </div>
+  <div id="slides">
+    <ul>
+      <li class="slide">
+        <div class="quoteContainer">
+          <p class="quote-phrase">In November of 2014, the Baltimore City Department of Public Works (DPW) created the Stormwater Advisory Committee (SWAC). The purpose of SWAC is to advise the Department on stormwater projects, programs, and issues, and to help educate stakeholder groups on related matters. </p>
+        </div>
+      </li>
+      <li class="slide">
+        <div class="quoteContainer">
+          <p class="quote-phrase">To date the Advisory Committee has reviewed and provided comment on:<br>
+              * The City's Municipal Separate Storm Sewer System (MS4) Watershed Implementation Plan, which guides DPW's capital improvement<br>
+              * projects for stormwater management and stream restoration;<br>
+              * Stormwater fee regulations for port industries;<br>
+              * Proposed changes to the State's stormwater fee legislation;<br>
+              * DPW's stormwater utility fund and how stormwater fees are used to improve water quality;<br>
+              * The Clean Water Baltimore website and associated educational material.<br>
+          </p>
+        </div>
+      </li>
+      <li class="slide">
+        <div class="quoteContainer">
+          <p class="quote-phrase">In creating the Stormwater Advisory Committee, DPW Director Rudolph S. Chow, P.E., announced, 'I am confident that the Stormwater Advisory Committee members have selected leaders who will help the committee work to create an examination process that is fiscally transparent, has the support of the wider community, and benefits a range of groups throughout the City.'</p>
+        </div>
+      </li>
+      <li class="slide">
+        <div class="quoteContainer">
+          <p class="quote-phrase">The SWAC is made up of volunteer members representing a diversity of sectors, including environmental non-profits, businesses and industries, anchor institutions and citizens. The members are:<br>
+            * Jennifer Aiosa, Friends of Patterson Park / Blue Water Baltimore<br>
+            * Kimberly Brandt, 1000 Friends of Marylan<br>
+            * Bif Browning, Southwest Partnershi<br>
+            * Debbie Cameron, Baltimore Tree Trust<br>
+            * Terry Cummings, Chesapeake Bay Foundation [Chair] <br>
+            * Brian Hammock, CSX / South Baltimore Business Alliance<br>
+            * Matthew Kimball, Building Owners and Managers Association of Baltimore<br>
+            * Ashley Pennington, Johns Hopkins University Office of Sustainability<br>
+            * Joan Plisko, Maryland Hospitals for a Healthy Environmen<br>
+            * Alan Pressman, BGE<br>
+            * Daryl Sabourin, ASR Inc., Domino Sugar / Baltimore Port Alliance [Vice-Chair] <br>
+            * Noah Smock, Baltimore Community ToolBank<br>
+            * Bonnie Sorak, Interfaith Partners for the Chesapeake<br>
+         </p>
+        </div>
+      </li>
+      <li class="slide">
+        <div class="quoteContainer">
+          <p class="quote-phrase">Staff from DPW and other City agencies, such as the departments of Transportation, Recreation and Parks, and the Public Schools, serve as ex-officio members to support the committee.</p>
+        </div>
+      </li>
+      <li class="slide">
+        <div class="quoteContainer">
+          <p class="quote-phrase">SWAC meets on a quarterly basis, with sub-committees meeting in between. Advisory Committee meetings are open to the public and are advertised in advance. Meeting dates, minutes of past meetings, and other information regarding the Stormwater Advisory Committee can be found at www.cleanwaterbaltimore.org. For more information, contact Mark Cameron, Watershed Liaison, at mark.cameron@baltimorecity.gov or 410-396-0732.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- slider end -->
+<div id="showall" style="display: none; padding-right: 30px;">
+<span style="line-height: normal; font-size: 18px;">
+            <p style="font-family: verdana; text-align: left; margin-bottom: 6pt;"><span style="font-size: medium; color: #333333; background-color: initial;">In November of 2014, the Baltimore City Department of Public Works (DPW) created the Stormwater Advisory Committee (SWAC).  The purpose of SWAC is to advise the Department on stormwater projects, programs, and issues, and to help educate stakeholder groups on related matters. To date the Advisory Committee has reviewed and provided comment on:</span></p>
+            <ul>
+                <li><span style="font-family: verdana; font-size: 16px;">The City&rsquo;s Municipal Separate Storm Sewer System (MS4) Watershed Implementation Plan, which guides DPW&rsquo;s capital improvement projects for stormwater management and stream restoration; </span></li>
+                <li><span style="font-family: verdana; font-size: 16px;">Stormwater fee regulations for port industries;</span></li>
+                <li><span style="font-family: verdana; font-size: 16px;">Proposed changes to the State&rsquo;s stormwater fee legislation;</span></li>
+                <li><span style="font-family: verdana; font-size: 16px;">DPW&rsquo;s stormwater utility fund and how stormwater fees are used to improve water quality; </span></li>
+                <li><span style="font-family: verdana; font-size: 16px;">The Clean Water Baltimore website and associated educational material.</span></li>
+            </ul>
+            <p style="margin-bottom: 6pt;"><span style="font-family: verdana; font-size: 16px;">In creating the Stormwater Advisory Committee, DPW Director Rudolph S. Chow, P.E., announced, &ldquo;I am confident that the Stormwater Advisory Committee members have selected leaders who will help the committee work to create an examination process that is fiscally transparent, has the support of the wider community, and benefits a range of groups throughout the City.&rdquo; </span></p>
+            <p style="margin-bottom: 6pt;"><span style="font-family: verdana; font-size: 16px;">The SWAC is made up of volunteer members representing a diversity of sectors, including environmental non-profits, businesses and industries, anchor institutions and citizens. The members are: </span></p>
+            <ul>
+                <li><span style="font-family: verdana; font-size: 16px;">Jennifer Aiosa, Friends of Patterson Park / Blue Water Baltimore</span></li>
+                <li><span style="font-family: verdana; font-size: 16px;">Kimberly Brandt, 1000 Friends of Maryland</span></li>
+                <li><span style="font-family: verdana; font-size: 16px;">Bif Browning, Southwest Partnership</span></li>
+                <li><span style="font-family: verdana; font-size: 16px;">Debbie Cameron, Baltimore Tree Trust</span></li>
+                <li><span style="font-family: verdana; font-size: 16px;">Terry Cummings, Chesapeake Bay Foundation [Chair]</span></li>
+                <li><span style="font-family: verdana; font-size: 16px;">Brian Hammock, CSX / South Baltimore Business Alliance</span></li>
+                <li><span style="font-family: verdana; font-size: 16px;">Matthew Kimball, Building Owners and Managers Association of Baltimore</span></li>
+                <li><span style="font-family: verdana; font-size: 16px;">Ashley Pennington, Johns Hopkins University Office of Sustainability</span></li>
+                <li><span style="font-family: verdana; font-size: 16px;">Joan Plisko, Maryland Hospitals for a Healthy Environment</span></li>
+                <li><span style="font-family: verdana; font-size: 16px;">Alan Pressman, BGE</span></li>
+                <li><span style="font-family: verdana; font-size: 16px;">Daryl Sabourin, ASR Inc., Domino Sugar / Baltimore Port Alliance [Vice-Chair]</span></li>
+                <li><span style="font-family: verdana; font-size: 16px;">Noah Smock, Baltimore Community ToolBank</span></li>
+                <li><span style="font-family: verdana; font-size: 16px;">Bonnie Sorak, Interfaith Partners for the Chesapeake</span></li>
+            </ul>
+            <p><span style="font-family: verdana; font-size: 16px;">Staff from DPW and other City agencies, such as the departments of Transportation, Recreation and Parks, and the Public Schools, serve as ex-officio members to support the committee.</span></p>
+            <p><span style="font-family: verdana; font-size: 16px;">SWAC meets on a quarterly basis, with sub-committees meeting in between. Advisory Committee meetings are open to the public and are advertised in advance. Meeting dates, minutes of past meetings, and other information regarding the Stormwater Advisory Committee can be found at <a href="http://www.cleanwaterbaltimore.org/">www.cleanwaterbaltimore.org</a>. For more information, contact Mark Cameron, Watershed Liaison, at <a href="mailto:mark.cameron@baltimorecity.gov">mark.cameron@baltimorecity.gov</a> or 410-396-0732.</span></p>
+</span>
+</div> 
+<br><br>
+ <!-- here modify -->
+            </span>
+
+            <div style="text-align: left;"><strong style="color: #333333; background-color: initial;">SWAC Meeting Dates</strong></div>
+            <br />
+            <span style="font-family: verdana; font-size: 16px;">
+            <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                <tbody>
+                </tbody>
+            </table>
+            <span style="font-size: 14px;">
+            <div style="text-align: left;"><span style="font-size: 14px; color: #333333; background-color: initial;">February 2, 2015</span></div>
+            <span style="font-size: 14px;"><span style="font-size: medium; text-align: center;">
+            <div style="text-align: left;"><span style="font-size: 14px; color: #333333; background-color: initial;">May 4, 2015</span></div>
+            </span><span style="font-size: medium; text-align: center;">
+            <div style="text-align: left;"><span style="font-size: 14px; color: #333333; background-color: initial;">August 3, 2015</span></div>
+            </span></span><span style="font-size: medium; text-align: center;">
+            <div style="text-align: left;"><span style="font-size: 14px; color: #333333; background-color: initial;">November 2</span><span style="font-size: 14px; color: #333333; background-color: initial;"><span style="font-size: 14px;">, 201</span><span style="font-family: verdana;">5</span></span></div>
+            </span><br />
+            </span>
+            <div style="font-family: verdana; text-align: left;"><span style="font-size: 14px; color: #333333; background-color: initial;">All meetings begin at 6 pm.</span></div>
+            </span>
+            <div style="line-height: normal; font-size: medium; margin: 0px;">
+            <span style="font-family: verdana; font-size: 16px;">
+            <br />
+            <div style="text-align: left;"><strong style="color: #333333; background-color: initial;"><span style="font-size: 14px;">Next Quarterly Meeting</span></strong></div>
+            </span></div>
+            <div style="line-height: normal; font-size: medium; margin: 0px;">
+            <div style="text-align: left;"><span style="font-size: 14px; color: #333333; background-color: initial;">November 2, 2015&nbsp;</span></div>
+            </div>
+            <div style="text-align: left; line-height: normal; font-size: medium; margin: 0px;"><span style="font-size: 14px; font-family: verdana;">Planning Department Board Room<br />
+            </span></div>
+            <div style="text-align: left; line-height: normal; font-size: medium; margin: 0px;"><span style="font-size: 14px; font-family: verdana;">417 E. Fayette Street, 8<span style="font-size: 14px;"><sup>th</sup></span>&nbsp;Floor</span></div>
+            <div style="text-align: left; line-height: normal; font-size: medium; margin: 0px;"><span style="font-size: 14px; font-family: verdana;">Baltimore, MD 21202</span></div>
+            ...........................................&nbsp;<br />
+            <br />
+            <div style="text-align: left;"><span style="color: #333333; background-color: initial;"><strong>SWAC Agenda</strong><br />
+            </span></div>
+            <div style="text-align: left;"><span style="font-size: 14px; color: #333333; background-color: initial;">August 3, 2015 - <a href="http://www.cleanwaterbaltimore.org/SWAC%20Agenda%208_3_15.pdf">Click here</a></span></div>
+            <div style="text-align: left;"><span style="font-size: 14px; color: #333333;">November 2, 2015 -&nbsp;</span><span style="font-size: 14px;"><a href="/Oct2015/SWAC%20Agenda%2011_2_15.pdf">Click here</a></span><br />
+            </div>
+            <span style="text-align: center;">...........................................&nbsp;</span><br />
+            <br />
+            <div style="text-align: left;"><span style="color: #333333; background-color: initial;"><strong>SWAC Minutes</strong><br />
+            <span style="font-size: 14px; line-height: normal; color: #333333;"><a href="http://www.cleanwaterbaltimore.org/Nov2014/SWAC-Minutes-11_17_14%20final.pdf">November 17, &nbsp;2014</a><br />
+            </span><span style="font-size: 14px;"><a href="/Feb2015/SWAC Minutes 2_2_15.pdf">February 2, 2015</a></span><br />
+            </span></div>
+            <div style="text-align: left;"><span style="color: #333333; background-color: initial;"><span style="font-size: 14px;"><a href="/may2015/SWAC Minutes 5_4_15.pdf">May 4, 2015</a></span><br />
+            </span></div>
+            <div style="text-align: left;"><span style="font-size: 14px; color: #333333; background-color: initial;"><a href="http://www.cleanwaterbaltimore.org/August_2015/SWAC%20Minutes%208_3_15rev.pdf" style="font-size: 14px;">August 3, 2015</a><br />
+            </span></div>
+            <span style="background-color: #ffffff;">...........................................&nbsp;<br />
+            <span style="text-align: center;"><br />
+            <strong style="color: #333333;"><strong style="font-family: verdana; font-size: large; line-height: normal; text-align: center;"><span style="font-size: 16px;">
+            <div style="text-align: left;"><strong style="font-size: large; color: #333333;"><span style="font-size: 14px;">Stormwater Presentations</span></strong></div>
+            </span></strong></strong><span style="font-size: 14px; line-height: normal; color: #333333;"><a href="/may2015/SWAC Fiscal 5-4-15.pdf">Fiscal</a><br />
+            </span><span style="font-size: 14px; color: #333333;"><a href="/may2015/Trash TMDL 30 percent briefing 5_4_15.pdf">Trash TMDL</a>&nbsp;<br />
+            </span>...........................................&nbsp;<br />
+            <br />
+            </span><span size="4" style="font-size: large; line-height: normal; text-align: center; font-family: verdana;"><strong><span style="font-size: 16px;">
+            <div style="text-align: left;"><strong style="font-size: large; color: #333333;"><span style="font-size: 14px;">Stormwater Advisory Council Ethics Rules</span></strong></div>
+            </span></strong>
+            <div style="text-align: left;"><span style="font-size: 14px; font-family: verdana; color: #333333;">Baltimore City Code, Article 8 covers ethics provisions for the City</span><span _face="verdana" style="font-size: 14px; font-weight: bold; color: #333333;">.</span></div>
+            </span><span style="line-height: normal; text-decoration: underline; font-family: 'times new roman';"><a href="http://www.cleanwaterbaltimore.org/Oct2014/SWAC%20Conflict%20of%20Interests%20Fact%20Sheet%20Final.pdf" style="text-decoration: underline; font-family: 'times new roman'; font-size: medium; line-height: normal; text-align: center;"><img alt="" src="/Oct2015/icon-download21.png" style="border: 0px solid; width: 75px; height: 75px;" /></a><span style="text-align: center; border-color: initial; border-image-source: initial; border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; font-size: 16px;"></span></span><br />
+            </span></div>
+            <div style="text-align: left;">
+
+            <br />
+            </div>
+            </td>
+            <td style="text-align: left; vertical-align: top; width: 20px;">&nbsp;</td>
+            <td style="text-align: left; vertical-align: top; width: 275px;"></td>
+        </tr>
+    </tbody>
+</table>
+<div><br />
+</div>
+
+<!-- table -->
+
+<br><br>
+<!-- <div class="container">
+      <div class="row">
+           <div class="col-xs-6 col-sm-3">
+                  <strong>SWAC Meeting Dates</strong> <br>
+                  February 2, 2015<br>
+                  May 4, 2015<br>
+                  August 3, 2015<br>
+                  November 2, 2015<br>
+                  All meetings begin at 6 pm.<br>
+                  Stormwater Advisory Committee (SWAC)<br>
+           </div>
+           <div class="col-xs-6 col-sm-3">
+                 <strong>Quarterly Meeting</strong><br>
+                  November 2, 2015 <br>
+                  Planning Department Board Room<br>
+                  417 E. Fayette Street, 8th Floor<br>
+                  Baltimore, MD 21202<br>
+            </div>
+      </div>
+      <div class="row">
+           <div class="col-xs-6 col-sm-3">
+                  <strong>SWAC Agenda</strong><br>
+                  August 3, 2015 - Click here<br>
+                  November 2, 2015 - Click here<br>
+           </div>
+           <div class="col-xs-6 col-sm-3">
+                  <strong>SWAC Minutes</strong><br>
+                  November 17,  2014<br>
+                  February 2, 2015<br>
+                  May 4, 2015<br>
+                  August 3, 2015<br>
+           </div>
+      </div>
+      <div class="row">
+           <div class="col-xs-6 col-sm-3">
+                  <strong>Stormwater Management</strong><br>
+                  Fiscal<br>
+                  Trash<br>
+           </div>
+           <div class="col-xs-6 col-sm-3">
+                <strong>Stormwater Advisory Council Ethics Rules</strong><br>
+                  Baltimore City Code, Article 8 covers ethics provisions for the City.<br>
+           </div>
+      </div>
+</div> -->
+<!-- table -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+<script>
+$(document).ready(function () {
+    //rotation speed and timer
+    var speed = 5000;
+    
+    var run = setInterval(rotate, speed);
+    var slides = $('.slide');
+    var container = $('#slides ul');
+    var elm = container.find(':first-child').prop("tagName");
+    var item_width = container.width();
+    var previous = 'prev'; //id of previous button
+    var next = 'next'; //id of next button
+    slides.width(item_width); //set the slides to the correct pixel width
+    container.parent().width(item_width);
+    container.width(slides.length * item_width); //set the slides container to the correct total width
+    container.find(elm + ':first').before(container.find(elm + ':last'));
+    resetSlides();
+    
+    
+    //if user clicked on prev button
+    
+    $('#buttons a').click(function (e) {
+        //slide the item
+        
+        if (container.is(':animated')) {
+            return false;
+        }
+        if (e.target.id == previous) {
+            container.stop().animate({
+                'left': 0
+            }, 1500, function () {
+                container.find(elm + ':first').before(container.find(elm + ':last'));
+                resetSlides();
+            });
+        }
+        
+        if (e.target.id == next) {
+            container.stop().animate({
+                'left': item_width * -2
+            }, 1500, function () {
+                container.find(elm + ':last').after(container.find(elm + ':first'));
+                resetSlides();
+            });
+        }
+
+        if (e.target.id == 'showAll') {
+            $("#carousel").css("display","none");
+            $("#showall").css("display","block");
+        }
+        
+        //cancel the link behavior            
+        return false;
+        
+    });
+    
+    //if mouse hover, pause the auto rotation, otherwise rotate it    
+    container.parent().mouseenter(function () {
+        clearInterval(run);
+    }).mouseleave(function () {
+        run = setInterval(rotate, speed);
+    });
+    
+    
+    function resetSlides() {
+        //and adjust the container so current is in the frame
+        container.css({
+            'left': -1 * item_width
+        });
+    }
+    
+});
+//a simple function to click next link
+//a timer will call this function, and the rotation will begin
+
+function rotate() {
+    $('#next').click();
+}
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>

@@ -11,7 +11,7 @@
 			"file": "Default.html",
 			"settings":
 			{
-				"buffer_size": 3109,
+				"buffer_size": 3513,
 				"line_ending": "Windows"
 			}
 		},
@@ -19,8 +19,17 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 794,
-				"line_ending": "Unix"
+				"buffer_size": 1013,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Junsu.Shen/Desktop/selfstatement",
+			"settings":
+			{
+				"buffer_size": 2106,
+				"line_ending": "Windows",
+				"name": "1. Are you actively interviewing?  If so, at what"
 			}
 		}
 	],
@@ -31,16 +40,20 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "sshtml",
+		"height": 127.0,
+		"last_filter": "install",
 		"selected_items":
 		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"sshtml",
 				"Set Syntax: HTML"
 			]
 		],
-		"width": 392.0
+		"width": 400.0
 	},
 	"console":
 	{
@@ -61,8 +74,7 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/shenjunsu/Desktop/Bootstrap",
-		"/C/Users/shenjunsu/Desktop/Bootstrap/css"
+		"/C/Users/Junsu.Shen/Desktop/bootstrap"
 	],
 	"file_history":
 	[
@@ -110,7 +122,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -119,25 +131,28 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3109,
+						"buffer_size": 3513,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2876,
-								2876
+								2479,
+								2240
 							]
 						],
 						"settings":
 						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 409.0,
+						"translation.y": 132.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -149,22 +164,54 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 794,
+						"buffer_size": 1013,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								602,
-								602
+								0,
+								0
 							]
 						],
 						"settings":
 						{
+							"remote_loading": false,
+							"synced": false,
 							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/Junsu.Shen/Desktop/selfstatement",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2106,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								236,
+								236
+							]
+						],
+						"settings":
+						{
+							"auto_name": "1. Are you actively interviewing?  If so, at what",
+							"incomplete_sync": null,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -208,6 +255,10 @@
 	},
 	"menu_visible": true,
 	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
 	{
 		"height": 0.0
 	},
