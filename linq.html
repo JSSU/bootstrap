@@ -1,0 +1,114 @@
+Use Entity Framework connect data from database in code behind:
+
++ Find the Entity Container Name --[Entity Container Name]
++ In  `code behind` use LINQ:
+    * Create context use LINQ: var query = from it(whatever name) in [Entity Container Name].[Table Name]
+    * query is everything in table and could use:            
+        ```
+            foreach (var res in query)
+                Console.WriteLine("{0} | {1} | {2}", res.ID, res.Agency_Name, res.Ini);
+        ```
+    * Bind Gridview:
+        ```
+            [GridView ID].DataSource = query;
+            [GridView ID].DataBind();
+        ```
+
+
+var personIni = dbcontext.New_DPW_Manager
+                .Where(p => p.ID == 1)
+                .Select(p=>p.Ini)
+                .ToArray();
+//.FirstOrDefault()
+
+/**
+ * Insert
+ */
+public void LinqToSqlInsert01() {
+    var q =
+        from c in db.Customers
+        where c.Region == "WA"
+        select c;
+
+    Console.WriteLine("*** BEFORE ***");
+    ObjectDumper.Write(q);
+
+    Console.WriteLine();
+    Console.WriteLine("*** INSERT ***");
+    var newCustomer = new Customer { CustomerID = "MCSFT",
+                                     CompanyName = "Microsoft",
+                                     ContactName = "John Doe",
+                                     ContactTitle = "Sales Manager",
+                                     Address = "1 Microsoft Way",
+                                     City = "Redmond",
+                                     Region = "WA",
+                                     PostalCode = "98052",
+                                     Country = "USA",
+                                     Phone = "(425) 555-1234",
+                                     Fax = null
+                                   };
+    db.Customers.InsertOnSubmit(newCustomer);
+    db.SubmitChanges();
+
+    Console.WriteLine();
+    Console.WriteLine("*** AFTER ***");
+    ObjectDumper.Write(q);
+
+    Cleanup64();  // Restore previous database state
+}
+
+/**
+ *  Update
+ */
+public void LinqToSqlInsert04() {
+    var q =
+        from c in db.Customers
+        where c.CustomerID == "ALFKI"
+        select c;
+
+    Console.WriteLine("*** BEFORE ***");
+    ObjectDumper.Write(q);
+
+    Console.WriteLine();
+    Console.WriteLine("*** UPDATE ***");
+    Customer cust = db.Customers.First(c => c.CustomerID == "ALFKI");
+    cust.ContactTitle = "Vice President";
+    db.SubmitChanges();
+
+    Console.WriteLine();
+    Console.WriteLine("*** AFTER ***");
+    ObjectDumper.Write(q);
+
+    Cleanup67();  // Restore previous database state
+}
+/**
+ *  delete
+ */
+public void LinqToSqlInsert06() {
+    Console.WriteLine("*** BEFORE ***");
+    ObjectDumper.Write(from c in db.OrderDetails
+                              where c.OrderID == 10255
+                              select c);
+
+    Console.WriteLine();
+    Console.WriteLine("*** DELETE ***");
+    //Beverages
+    //[table]                 [database][table]     [c]is a colum  
+    OrderDetail orderDetail = db.OrderDetails.First(c => c.OrderID == 10255 && c.ProductID == 36);
+
+    db.OrderDetails.DeleteOnSubmit(orderDetail);
+    db.SubmitChanges();
+
+    Console.WriteLine();
+    Console.WriteLine("*** AFTER ***");
+    ClearDBCache();
+    ObjectDumper.Write(from c in db.OrderDetails where c.OrderID == 10255 select c);
+
+    Cleanup69();  // Restore previous database state
+}
+
+
+
+
+
+
