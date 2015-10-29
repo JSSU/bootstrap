@@ -3,7 +3,7 @@ Use Entity Framework connect data from database in code behind:
 + Find the Entity Container Name --[Entity Container Name]
 + In  `code behind` use LINQ:
     * Create context use LINQ: var query = from it(whatever name) in [Entity Container Name].[Table Name]
-    * query is everything in table and could use:            
+    * query is everything in table and could use:
         ```
             foreach (var res in query)
                 Console.WriteLine("{0} | {1} | {2}", res.ID, res.Agency_Name, res.Ini);
@@ -21,9 +21,8 @@ var personIni = dbcontext.New_DPW_Manager
                 .ToArray();
 //.FirstOrDefault()
 
-/**
- * Insert
- */
+/** Insert **/
+```
 public void LinqToSqlInsert01() {
     var q =
         from c in db.Customers
@@ -56,10 +55,9 @@ public void LinqToSqlInsert01() {
 
     Cleanup64();  // Restore previous database state
 }
-
-/**
- *  Update
- */
+```
+/** Update **/
+```
 public void LinqToSqlInsert04() {
     var q =
         from c in db.Customers
@@ -81,6 +79,7 @@ public void LinqToSqlInsert04() {
 
     Cleanup67();  // Restore previous database state
 }
+```
 //-------------============--------------------
 Northwnd db = new Northwnd(@"c:\Northwnd.mdf");
 
@@ -106,9 +105,8 @@ db.Orders.DeleteOnSubmit(ord0);
 // Ask the DataContext to save all the changes.
 db.SubmitChanges();
 //---------------------------------------------------
-/**
- *  delete
- */
+/** delete **/
+```
 public void LinqToSqlInsert06() {
     Console.WriteLine("*** BEFORE ***");
     ObjectDumper.Write(from c in db.OrderDetails
@@ -131,9 +129,34 @@ public void LinqToSqlInsert06() {
 
     Cleanup69();  // Restore previous database state
 }
+```
 
 
+You need to add reference to System.Data.Linq assembly in your test project. The assembly reference is added to your main project when creating dbml file (data context). in order to use all of the LinqToSQL functionality, you need to reference System.Data.Linq in all of the projects where DataContext is used.
 
+```
+            //var dbchange = (from it in dbcontext.New_DPW_Manager
+            //                select it
+            //           ).First();
 
+            var db = (from it in dbcontext.New_DPW_Manager
+                            select it
+                       ).ToArray();
+            var dbchange = db[0];
+            //create table class
+            New_DPW_Manager managerdb=new New_DPW_Manager();
+            managerdb.M_Name = mainName.Value;
+            //dbchange.M_Name = mainName.Value;
 
+            DirName.Value = mainName.Value;
+            DirTitle.Value = dbcontext.SaveChanges().ToString();
+            //dbchange.M_Name = mainName.Value;
+            //dbchange.M_Title = mainTitle.Value;
+            //dbchange.Tel = mainTel.Value;
+            //dbchange.Email = mainEmail.Value;
+            //dbchange.Office_Address = mainAddress.Value;
+            //dbchange.Department = mainDepartment.Value;
+            //dbchange.Agency_Name = mainAgency.Value;
+            //DirName.Value = dbcontext.SaveChanges().ToString();
+```
 
