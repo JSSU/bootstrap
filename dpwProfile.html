@@ -1,0 +1,420 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="dpwProfile._default1" %>
+
+<%@ Register Assembly="DevExpress.Web.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxEditors" TagPrefix="dx" %>
+
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css?parameter=1" rel="stylesheet">
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="icon" href="icons/form.ico">
+    <style>
+        #draggable { width: 150px; height: 150px; padding: 0.5em; border: 1px solid #ccc; display: table; }  
+        #centerdiv { text-align:center; vertical-align: middle; display: table-cell;}  
+    </style>
+</head>
+ <body>
+
+    <form id="form1" runat="server">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">DPW</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul id="nav_id" class="nav navbar-nav">
+            <li><a href="#Main">Main</a></li>    <!-- class="active" -->
+            <li><a href="#Director">Director</a></li>
+            <li><a href="#Summary-Sheet">Summary-Sheet</a></li>
+            <li><a href="#Enclosure">Enclosure</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <div class="container">
+      <div class="row mainStarter">
+        <h1>DPW Profile</h1>
+        <!-- BodyParts -->
+        <!---->
+        <div id="Main" class="col-md-4 starter">
+          <h1 class="containersize">Main</h1>
+            <!--form start-->
+                <label for="inputmainName" class="col-sm-3 control-label" style="text-align:center;">Name</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="mainName" runat="server">
+                </div>
+                <label for="inputmainTitle" class="col-sm-3 control-label" style="text-align:center;">Title</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="mainTitle" runat="server">
+                </div>
+                <label for="inputmainTel" class="col-sm-3 control-label" style="text-align:center;">Tel</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="mainTel" runat="server">
+                </div>
+                <label for="inputmainEmail" class="col-sm-3 control-label" style="text-align:center;">Email</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="mainEmail" runat="server">
+                </div>
+                <label for="inputmainAddress" class="col-sm-3 control-label" style="text-align:center;">Address</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="mainAddress" runat="server">
+                </div>
+                <label for="inputmainDepartment" class="col-sm-3 control-label" style="text-align:center;">Department</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="mainDepartment" runat="server">
+                </div>
+               <label for="inputmainAgency" class="col-sm-3 control-label" style="text-align:center;">Agency</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="mainAgency" runat="server">
+                </div>
+
+                <div class="col-sm-offset-2 col-sm-10 btn-topdown">
+                  <asp:LinkButton CssClass="btn btn-default" runat="server" Onclick="updateMain">UPDATE</asp:LinkButton>
+                </div>
+
+            <!--form end-->
+        </div>
+
+        <!-- Director -->
+        <div id="Director" class="col-md-4 starter">
+          <h1 class="containersize">Director</h1>
+            <!--form start-->
+                <label for="inputDirName" class="col-sm-3 control-label" style="text-align:center;">Name</label>
+                <div class="col-sm-9">
+                  <input  type="text" class="form-control" id="DirName" runat="server">
+                </div>
+                <label for="inputDirTitle" class="col-sm-3 control-label" style="text-align:center;">Title</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="DirTitle" runat="server">
+                </div>
+                <div class="col-sm-offset-2 col-sm-10 btn-topdown">
+                  <button type="submit" class="btn btn-default">UPDATE</button>
+                </div>
+            <!--form end-->
+        </div>
+        <!-- Summary-Sheet -->
+        <div id="Summary-Sheet" class="col-md-4 starter">
+          <h1 class="containersize">Summary-Sheet</h1>
+        <!--form start-->
+                <label for="inputEmail3" class="col-sm-3 control-label" style="text-align:center;">Name</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="Email2" runat="server">
+                </div>
+                <label for="inputPassword3" class="col-sm-3 control-label" style="text-align:center;">Title</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="Password2" runat="server">
+                </div>
+                <div class="col-sm-offset-2 col-sm-10 btn-topdown">
+                  <button type="submit" class="btn btn-default">UPDATE</button>
+                </div>
+            <!--form end-->
+        </div> 
+        <!-- Enclosure-->
+        <div id="Enclosure" class="col-md-4 starter">
+          <h1 class="containersize">Enclosure</h1>
+        <!--form start-->
+                <label for="inputEmail3" class="col-sm-3 control-label" style="text-align:center;">Name</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="Text1" runat="server">
+                </div>
+                <label for="inputPassword3" class="col-sm-3 control-label" style="text-align:center;">Title</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="Text2" runat="server">
+                </div>
+                <div class="col-sm-offset-2 col-sm-10 btn-topdown">
+                  <button type="submit" class="btn btn-default">UPDATE</button>
+                </div>
+            <!--form end-->
+        </div>
+        
+        
+        <!-- DataSource -->
+      </div>
+    </div><!-- /.container -->
+<!-- success box-->  
+<div id="myModal" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+ <!-- style="display: block;"
+      style="overflow: auto; overflow-y: hidden;"  隐藏拉栏，但会cut off
+      style="overflow: auto; position: relative;"  隐藏-->
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Success</h4>
+        </div>
+        <div class="modal-body">
+          <p>You update is successed</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div>
+
+<!-- success box-->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript">
+      $(".nav a").on("click", function () {
+          //Acitive nav. Default no highlight, 
+          $(".nav").find(".active").removeClass("active");
+          $(this).parent().addClass("active");
+          //alert($(this).html());
+          $(".container .mainStarter .starter").addClass("hideContainer").removeClass("col-md-4");
+          $(".container .mainStarter #" + $(this).html()).removeClass("hideContainer").addClass("col-md-6 col-md-offset-3");
+      });
+      $(".navbar-brand").on("click", function () {
+          $(".nav").find(".active").removeClass("active");
+          $(".container .mainStarter .starter").removeClass("hideContainer col-md-6 col-md-offset-3").addClass("col-md-4");
+      });
+      //show success box from code behind
+      function openModal() {
+          $('#myModal').modal('show');
+      }
+  </script>
+<script type="text/javascript">    (function () { return window.SIG_EXT = {}; })()</script>
+
+
+     </form>
+      </body>
+</html>
+
+//===================================================================================code behind===========================================
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Data.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Data;
+using System.Data.Common;
+
+
+namespace dpwProfile
+{
+    public partial class _default1 : System.Web.UI.Page
+    {
+        DPW_OBC_PrequalEntities dbcontext = new DPW_OBC_PrequalEntities();
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+                var query = (from it in dbcontext.New_DPW_Manager
+                             orderby it.ID
+                             select it)
+                            .ToArray();
+                var db = query[0];
+                string agentName = db.M_Name;
+                string agentTitle = db.M_Title;
+                string agentTel = db.Tel;
+                string agentEmail = db.Email;
+                string agentAddress = db.Office_Address;
+                string agentDepartment = db.Department;
+                string agentAgency = db.Agency_Name;
+                mainName.Value = agentName;
+                mainTitle.Value = agentTitle;
+                mainTel.Value = agentTel;
+                mainEmail.Value = agentEmail;
+                mainAddress.Value = agentAddress;
+                mainDepartment.Value = agentDepartment;
+                mainAgency.Value = agentAgency;
+            }
+            //toArray
+
+/*
+            var personIni = dbcontext.New_DPW_Manager
+                            .Where(p => p.ID == 1)
+                            .Select(p=>p.Ini)
+                            .ToArray();
+            //.FirstOrDefault()
+            lb_read.Text=personIni[0].ToString();
+            //inp_ini.Value = personIni[0].ToString();
+
+*/
+            //lb_read.Text = query.ToString()+"dddd";
+            //foreach (var res in query)
+            //    Console.WriteLine("{0} | {1} | {2}", res.ID, res.Agency_Name, res.Ini);
+            //Console.ReadLine();
+            //lb_read.Text =query.GetType().ToString();
+            //****************************//
+            //gvShowComm.Rows[e.RowIndex].Cells[index]
+        }
+        //public void updateDB()
+        //{
+        //    DPW_OBC_PrequalEntities context = new DPW_OBC_PrequalEntities();
+        //    var change=(from a in context.New_DPW_Manager 
+        //                    where a.ID==1
+        //                    select a).SingleOrDefault();
+        //    change.M_Name = mainName.Value;
+        //    context.SaveChanges();
+
+        //    //New_DPW_Manager newDpwManager = new New_DPW_Manager();
+        //    //newDpwManager.M_Name = mainName.Value;
+        //    //context.SaveChanges();
+
+        //}
+        public void updateMain(object sender, EventArgs e)
+        {
+            var dbchange = (from a in dbcontext.New_DPW_Manager
+                         // where a.ID == 1
+                          select a).SingleOrDefault();
+
+            dbchange.M_Name = mainName.Value;
+            dbchange.M_Title = mainTitle.Value;
+            dbchange.Tel = mainTel.Value;
+            dbchange.Email = mainEmail.Value;
+            dbchange.Office_Address = mainAddress.Value;
+            dbchange.Department = mainDepartment.Value;
+            dbchange.Agency_Name = mainAgency.Value;
+            DirName.Value = dbcontext.SaveChanges().ToString();
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
+            //dbcontext.SaveChanges();
+
+
+            //var query = (from it in dbcontext.New_DPW_Manager
+            //             orderby it.ID
+            //             select it)
+            //.ToArray();
+            //var db = query[0];
+            //string agentName = db.M_Name;
+            //string agentTitle = db.M_Title;
+            //string agentTel = db.Tel;
+            //string agentEmail = db.Email;
+            //string agentAddress = db.Office_Address;
+            //string agentDepartment = db.Department;
+            //string agentAgency = db.Agency_Name;
+            //mainName.Value = agentName;
+            //mainTitle.Value = agentTitle;
+            //mainTel.Value = agentTel;
+            //mainEmail.Value = agentEmail;
+            //mainAddress.Value = agentAddress;
+            //mainDepartment.Value = agentDepartment;
+            //mainAgency.Value = agentAgency;
+
+
+            //DirName.Value = mainName.Value;
+            
+            //--------------------------works-------------------------
+            //using (DataContext db = new DataContext(System.Configuration.ConfigurationManager.
+            //                                        ConnectionStrings["FC_DB_CS"].ConnectionString))
+            //{   
+            //    var MyQuery = from objCustomer in db.GetTable<Manager_Table>()
+            //                  where objCustomer.ID == 1
+            //                  select objCustomer;
+            //     Manager_Table managerdb = (Manager_Table)MyQuery.First<Manager_Table>();
+
+            //     string updateName = mainName.Value;
+            //     managerdb.M_Name = updateName;//mainName.Value;//Kumasi Vines 
+            //     db.SubmitChanges();
+                
+            //}
+            //--------------------------works-------------------------
+            
+//here
+            //var ds = from it in dbcontext.New_DPW_Manager
+            //         select it;
+            //GV.DataSource = ds;
+            //GV.DataBind();
+            //var change = (from a in dbcontext.New_DPW_Manager
+            //              where a.ID == 1
+            //              select a).SingleOrDefault();
+
+            //change.M_Name = mainName.Value;
+            //dbcontext.SaveChanges();
+//here 
+            //var dbchange = (from it in dbcontext.New_DPW_Manager
+            //                select it
+            //           ).First();
+            
+            //mapping table
+                //SqlDataAdapter da = new SqlDataAdapter();
+                //DataSet ds = new DataSet();
+                //DataTableMapping dtm1;
+                //dtm1 = da.TableMappings.Add("Table", "New_DPW_Manager");
+                //da.Fill(ds);
+            //
+                    //DataContext d = new DataContext(System.Configuration.ConfigurationManager.
+                    //                                ConnectionStrings["FC_DB_CS"].ConnectionString);
+            //var table = (ITable)d.GetType()
+            //                    .GetProperty("New_DPW_Manager")
+            //                    .GetValue(d, null);
+            //
+
+
+            //            updateDB();
+            //var query = dbcontext.New_DPW_Manager.Where(p => p.ID == 1).FirstOrDefault();
+            //query.M_Name = mainName.Value;
+            //DirName.Value = mainName.Value;
+            //dbcontext.SaveChanges();
+            //dbcontext.AcceptAllChanges();
+                            //var query = dbcontext.New_DPW_Manager.Where(p => p.ID == 1);
+                            //foreach (var post in query)
+                            //{
+                            //    post.M_Name = mainName.Value;
+                            //}
+                            //dbcontext.SaveChanges();
+
+//context
+            //var MyQuery = from objCustomer in d.GetTable<New_DPW_Manager>()
+            //              where objCustomer.ID == 1
+            //              select objCustomer;
+            //New_DPW_Manager managerdb = (New_DPW_Manager)MyQuery.First<New_DPW_Manager>();
+//context
+                //var MyQuery = from objCustomer in d.GetTable<New_DPW_Manager>()
+                //              where objCustomer.ID == 1
+                //              select objCustomer;
+                //New_DPW_Manager managerdb = (New_DPW_Manager)MyQuery.First<New_DPW_Manager>();
+            
+            //managerdb.M_Name = mainName.Value;
+            
+                    //d.SubmitChanges();
+            
+            //create table class
+              //New_DPW_Manager managerdb=new New_DPW_Manager();
+              //managerdb.M_Name = mainName.Value;
+            //dbchange.M_Name = mainName.Value;
+
+              //DirName.Value = mainName.Value;
+              //DirTitle.Value = dbcontext.SaveChanges().ToString();
+            //dbchange.M_Name = mainName.Value;
+            //dbchange.M_Title = mainTitle.Value;
+            //dbchange.Tel = mainTel.Value;
+            //dbchange.Email = mainEmail.Value;
+            //dbchange.Office_Address = mainAddress.Value;
+            //dbchange.Department = mainDepartment.Value;
+            //dbchange.Agency_Name = mainAgency.Value;
+            //DirName.Value = dbcontext.SaveChanges().ToString();
+
+        }
+
+    }
+}
+
+
+
+
+
+

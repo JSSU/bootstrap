@@ -11,7 +11,7 @@
 			"file": "Default.html",
 			"settings":
 			{
-				"buffer_size": 3513,
+				"buffer_size": 4699,
 				"line_ending": "Windows"
 			}
 		},
@@ -19,17 +19,24 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 1013,
+				"buffer_size": 1014,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Junsu.Shen/Desktop/selfstatement",
+			"file": "css/bootstrap.min.css",
 			"settings":
 			{
-				"buffer_size": 2106,
-				"line_ending": "Windows",
-				"name": "1. Are you actively interviewing?  If so, at what"
+				"buffer_size": 122540,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "cleanwaterSWAC.html",
+			"settings":
+			{
+				"buffer_size": 24399,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -40,10 +47,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 127.0,
-		"last_filter": "install",
+		"height": 392.0,
+		"last_filter": "git",
 		"selected_items":
 		[
+			[
+				"git",
+				"Git: Gui"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -53,7 +64,7 @@
 				"Set Syntax: HTML"
 			]
 		],
-		"width": 400.0
+		"width": 416.0
 	},
 	"console":
 	{
@@ -74,10 +85,12 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Junsu.Shen/Desktop/bootstrap"
+		"/C/Users/Junsu.Shen/Desktop/bootstrap",
+		"/C/Users/Junsu.Shen/Desktop/bootstrap/css"
 	],
 	"file_history":
 	[
+		"/C/Users/Junsu.Shen/Desktop/selfstatement",
 		"/C/Users/shenjunsu/Desktop/Bootstrap/Default.html"
 	],
 	"find":
@@ -122,7 +135,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -131,15 +144,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3513,
+						"buffer_size": 4699,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2479,
-								2240
+								2307,
+								2307
 							]
 						],
 						"settings":
@@ -152,10 +165,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 132.0,
+						"translation.y": 840.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -164,7 +177,40 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1013,
+						"buffer_size": 1014,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1013,
+								1013
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 780.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/bootstrap.min.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 122540,
 						"regions":
 						{
 						},
@@ -177,9 +223,39 @@
 						],
 						"settings":
 						{
+							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "cleanwaterSWAC.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 24399,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14,
+								14
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -188,36 +264,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/Users/Junsu.Shen/Desktop/selfstatement",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2106,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								236,
-								236
-							]
-						],
-						"settings":
-						{
-							"auto_name": "1. Are you actively interviewing?  If so, at what",
-							"incomplete_sync": null,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
 					"type": "text"
 				}
 			]
