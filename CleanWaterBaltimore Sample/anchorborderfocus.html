@@ -1,0 +1,85 @@
+<meta charset="UTF-8">
+<div id="topq">
+	<ul>
+		<li id="1"><a href="#wS" title="">What is Stormwater?</a> </li>
+		<li id="2"><a href="#wCS" title="">Why Should I Care About Stormwater?</a></li>
+		<li id="3"><a href="#wCD" title="">What is the City Doing to Clean up Its Waterways?</a></li>
+		<li id="4"><a href="#hWP" title="">How Do We Pay for This Work?</a></li>
+		<li id="5"><a href="#WYCDRPS" title="">What Can I Do to Reduce Stormwater?</a></li>
+	</ul>
+</div>
+
+<div id="wS">
+	<h2>What is Stormwater?</h2>
+	When it rains, alleys and streets carry water away from our homes and yards and into the City’s storm drain pipe system, keeping our properties and roadways from flooding. This is called <strong>stormwater</strong>.
+
+	Stormwater picks up oils, sediment, nutrients, bacteria, chemicals and trash that are on these hard surfaces and carries them directly into the nearest storm drain. Stormwater is untreated, which means that much of it flows into streams, the harbor and eventually the Chesapeake Bay without any means of removing pollutants that can have a detrimental effect on water quality.
+
+	A few quick facts about the City's storm drain system:
+	<ul>
+		<li>Our storm drain system is separate from the sanitary sewer system.</li>
+		<li>There are over 1,100 miles of storm drain pipes, many of them conveying water even during dry weather.</li>
+		<li>We manage over 27,000 manholes and five pump stations.</li>
+		<li>There are more than 50,000 storm drain inlets.</li>
+		<li>There are 1,709 outfalls located along the streams and in the harbor.</li>
+		<li>Current system replacement/rehabilitation is estimated at over $2 billion.</li>
+	</ul>
+</div>
+<div id="wCS">
+	<h2>Why Should I Care About Stormwater?</h2>
+	The primary cause of water pollution in Baltimore is stormwater (the only major source of pollution that is growing in the Chesapeake Bay). This is caused by:
+	<ul>
+		<li>Alot of hard surfaces that do not soak up stormwater - 45% of Baltimore is impervious surfaces</li>
+		<li>Much of the stormdrain infrastructure is very old - some of it is over 100 years old!</li>
+		<li>Trash, litter, and pet waste in our streets and on vacant lots</li>
+	</ul>
+	Baltimore is a city that has grown up along the water. The city was founded and first populated along its harbor and the Jones Falls. As the city grew, it expanded outward and uphill, with industry filling in along the waterfront and the Jones Falls and Gwynns Falls stream valleys. Today, Baltimore’s Inner Harbor is a center for tourism and commerce, while the city’s many stream valley parks and trails provide recreational opportunities for tens of thousands of residents each year.
+
+	Additionally, there are several regulatory mandates that require Baltimore to improve its water quality. All of Baltimore’s waterways have been designated by the U.S. Environmental Protection Agency as being impaired for some type of pollutant, which the City is required to reduce. These are called TMDLs (Total Daily Maximum Loads). Also, because Baltimore has a municipal separate storm sewer system (MS4) (which means that stormwater is discharged directly into local streams and the harbor) the Maryland Department of the Environment requires that Baltimore have an MS4 permit.
+</div>
+<div id="wCD">
+	<h2>What is the City Doing?</h2>
+	The Department of Public Works is charged with meeting increasingly tougher federal regulations to not only manage the amount of stormwater we get each year, but also to ensure that what goes down our storm drains is cleaner when it reaches our waterways. These regulations include the MS4 Permit, local TMDLs, and the Consent Decree.
+
+	We not only repair old pipes but also restore streams and track pollutants in the surface waters. We will be installing a variety of stormwater best management practices (BMPs) to prevent flooding and filter out pollutants so that our water is cleaner when it reaches our streams, harbor and the Chesapeake Bay. We also review plans and inspect construction to ensure the protection of our waters that are potentially impacted by development. Reducing polluted stormwater runoff, and meeting the requirements of the TMDLs and MS4 Permit, will need to be accomplished by undertaking a comprehensive approach that includes:
+	<ul>
+		<li>Restoring streams</li>
+		<li>Installing “green” infrastructure facilities like bio-retention and rain gardens to manage stormwater</li>
+		<li>Planting trees</li>
+		<li>Removing impervious surfaces and replacing with these with green spaces</li>
+		<li>Inspecting and eliminating illicit discharges into the storm sewer system</li>
+		<li>Increasing plans review and permits</li>
+		<li>Upgrading and replacing pipes and conduits</li>
+		<li>Reducing trash and litter with street sweeping, debris interceptors and other collection methods</li>
+		<li>Educating the public about what they can do to reduce polluted runoff</li>
+	</ul>
+	In 2014 the Department of Public Works (DPW) prepared an MS4 and TMDL Watershed Implementation Plan(WIP) for implementing the various methods listed above, including costs, funding, timeline, and locations. The restoration plan was developed in an open process with multiple stakeholders. Each fiscal year the City creates an Annual Report that tracks progress toward meeting these goals. We are also tracking the Capital Improvement Program (CIP) green infrastructure projects that DPW will be installing.
+</div>
+<div id="hWP">
+	<h2>How will this be Paid?</h2>
+	TO BE COMPLETED
+</div>
+<div id="WYCDRPS">
+	<h2>What You Can Do to Reduce Polluted Stormwater</h2>
+	Reducing polluted stormwater runoff is not just the responsibility of DPW – EVERYONE has a role to play, whether it is a non-profit planting trees, a church installing a rain garden, or residents picking up trash in their neighborhood. The following are ways that you can be involved:
+	<ul>
+		<li>Green Your Home, Church or Business and Save Money on Your Stormwater Fee</li>
+		<li><a href="http://dpwapps.baltimorecity.gov/cleanwaterbaltimore/stormwater-participation-event-credit/">Incentives for Cleaning and Greening Your Community</a></li>
+		<li><a href="http://dpwapps.baltimorecity.gov/cleanwaterbaltimore/what-you-can-do-to-reduce-stormwater-runoff/">Simple Tips that You Can Do Around the House</a></li>
+	</ul>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		// alert("hello world");
+	});
+	$("#topq ul li").click(function () {
+		//alert(this.id);
+		var sId=$("ul #"+this.id+" a").attr('href').toString().substring(1)
+		//alert(sId)
+		$("div").css("color","black");
+		$("div").css("border","");		
+		$("#"+sId).css("color","rebeccapurple");
+		$("#"+sId).css("border","1px solid red");
+	});
+</script>
